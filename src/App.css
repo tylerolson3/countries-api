@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .toolbar-display {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 48px 104px;
+  margin: auto 0;
+} */
+
+.details--border-countries-dark {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #2b3844;
+}
+
+.details--border-countries-light {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* .my-container {
+  max-width: 1300px;
+} */
+
+.pointer {
+  cursor: pointer;
+  background-color: red;
+  color: red;
+}
+
+.card-light {
+  color: #111517;
+  background-color: white;
+  height: 100%;
+}
+
+.card-dark {
+  color: white;
+  background-color: #2b3844;
+  height: 100%;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 3px;
+  /* line-height: 16px; */
+}
+#search-field-light {
+  background-color: white;
+  color: #111517;
+}
+
+#search-field-dark {
+  background-color: #2b3844;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#details--button-light {
+  background-color: white;
+}
+#details--button-dark {
+  background-color: #2b3844;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details--back-button-dark {
+  text-decoration: none;
+  /* background-color: teal; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 18px;
+}
+
+.details--back-button-light {
+  text-decoration: none;
+  /* background-color: teal; */
+  color: #111517;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 18px;
+}
+
+.details--flag {
+  border-radius: 6px;
+}
+
+#demo-controlled-open-select-label-dark,
+#demo-controlled-open-select-dark {
+  color: white;
+  background-color: #2b3844;
+}
+
+#demo-controlled-open-select-label-light,
+#demo-controlled-open-select-light {
+  color: #111517;
+  background-color: #fff;
 }
