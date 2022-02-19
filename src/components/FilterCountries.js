@@ -3,14 +3,15 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import styles from "../styles/styles";
 
-const style = {
-  formControl: {
-    width: { xs: "53vw", sm: "95%" },
-    marginBottom: { xs: "1.5rem", sm: "0" },
-    marginTop: { sm: "23px" },
-  },
-};
+// const style = {
+//   formControl: {
+//     width: { xs: "53vw", sm: "95%" },
+//     marginBottom: { xs: "1.5rem", sm: "0" },
+//     marginTop: { sm: "23px" },
+//   },
+// };
 
 export default function ControlledOpenSelect(props) {
   const [open, setOpen] = React.useState(false);
@@ -29,6 +30,8 @@ export default function ControlledOpenSelect(props) {
     setOpen(true);
   };
 
+  // filter menu select item text color can't be set by a MUI theme in dark Mode,
+  // so you have to set it by className
   let filterMenuId =
     props.mode === "light"
       ? "demo-controlled-open-select-label-light"
@@ -38,19 +41,14 @@ export default function ControlledOpenSelect(props) {
     <div>
       <FormControl
         color="secondary"
-        sx={{
-          ...style.formControl,
-          m: 1,
-          minWidth: 220,
-          // backgroundColor: "primary.main",
-          // marginBottom: "0",
-          // marginBottom: "2rem",
-          // width: "93vw",
-          color: "blue",
-          // bgcolor: "red",
-        }}
+        sx={{ ...styles[16] }}
+        // sx={{
+        //   ...style.formControl,
+        //   m: 1,
+        //   minWidth: 220,
+        //   color: "blue",
+        // }}
       >
-        {/* <InputLabel id="demo-controlled-open-select-label"> */}
         <InputLabel id={filterMenuId}>Filter By Region</InputLabel>
         <Select
           labelId="demo-controlled-open-select-label"
@@ -62,13 +60,6 @@ export default function ControlledOpenSelect(props) {
           label="Age"
           onChange={handleChange}
         >
-          {/* <MenuItem value="">
-            <em>None</em>
-          </MenuItem> */}
-          {/* <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem> */}
-
           <MenuItem value="">Filter By Region</MenuItem>
           <MenuItem value="Africa">Africa</MenuItem>
           <MenuItem value="Americas">America</MenuItem>

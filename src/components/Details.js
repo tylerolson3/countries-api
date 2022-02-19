@@ -4,47 +4,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-
-const style = {
-  countryTitle: {
-    fontSize: { xs: "24px", sm: "32px" },
-  },
-  box1: {
-    margin: { xs: "30px 17px", sm: "40px 80px" },
-  },
-  box2: {
-    flexDirection: { xs: "column", sm: "row" },
-  },
-  box3: {
-    maxWidth: { sm: "40vw" },
-    minWidth: { xs: "70vw", sm: "40vw" },
-  },
-  box4: {
-    paddingY: { xs: "1rem", sm: "5rem" },
-    height: { xs: "50vh", sm: "100%" },
-    justifyContent: { xs: "flex-start", sm: "flex-end" },
-  },
-  box5: {
-    justifyContent: { sm: "space-between" },
-    width: { sm: "80%" },
-  },
-  box6: {
-    display: { sm: "flex" },
-    justifyContent: { sm: "space-between" },
-  },
-  box7: {
-    marginBottom: { xs: "25px" },
-  },
-  button: {
-    // marginTop: { xs: "-30px" },
-  },
-};
+import styles from "../styles/styles";
 
 function Details({ countryData, isDarkMode }) {
   let { abbrev } = useParams();
-  // console.log("country data", countryData);
-
-  // console.log("country props DETAILS page", countryData);
 
   // find the object array of the country page were currenlty on
   let selectedCountry = countryData.filter(
@@ -78,94 +41,32 @@ function Details({ countryData, isDarkMode }) {
   let displayColor = isDarkMode ? "dark" : "light";
 
   return (
-    // <Box
-    //   bgcolor="test.main"
-    //   sx={{
-    //     height: "120vh",
-    //     marginTop: "0",
-    //     padding: "40px 0",
-    //     // paddingBottom: "100px",
-    //   }}
-    // >
-    <Box sx={{ ...style.box1 }}>
+    <Box sx={{ ...styles[7] }}>
       <Button
         // id="details--button"
         id={`details--button-${displayColor}`}
         variant="outlined"
         color="primary"
-        sx={{
-          ...style.button,
-          borderRadius: "6px",
-          boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.293139)",
-          marginBottom: "50px",
-        }}
+        sx={{ ...styles[8] }}
       >
         <Link
           color="secondary"
           to="/"
-          // className="details--back-button"
           className={`details--back-button-${displayColor}`}
         >
-          <KeyboardBackspaceIcon sx={{ marginRight: "6px" }} /> Back
+          <KeyboardBackspaceIcon sx={{ mr: "6px" }} /> Back
         </Link>
       </Button>
 
-      <Box
-        sx={{
-          ...style.box2,
-          columnGap: "2rem",
-          // backgroundColor: "black",
-          display: "flex",
-          // flexDirection: "column",
-        }}
-      >
-        <Box
-          sx={{
-            ...style.box3,
-            width: "100%",
-            height: "auto",
-            // flexShrink: "1",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            flexGrow: "2",
-          }}
-        >
+      <Box sx={{ ...styles[9] }}>
+        <Box sx={{ ...styles[10] }}>
           <img src={country.flag} className="details--flag" width="100%" />
         </Box>
-        <Box
-          sx={{
-            ...style.box4,
-            display: "flex",
-            flexDirection: "row",
-            // alignItems: "flex-start",
-            width: "100%",
-            // border: "2px dashed red",
-
-            // border: "4px solid orange",
-          }}
-        >
-          <Box
-            sx={{
-              ...style.box5,
-              display: "flex",
-              flexDirection: "column",
-              // border: "3px dashed blue",
-              // maxWidth: "600px",
-              height: "100%",
-            }}
-          >
-            <Typography
-              sx={{
-                ...style.countryTitle,
-                fontWeight: "800",
-                marginY: "1rem",
-              }}
-            >
-              {country.name}
-            </Typography>
-            <Box sx={{ ...style.box6 }}>
-              <Box sx={{ ...style.box7 }}>
+        <Box sx={{ ...styles[11] }}>
+          <Box sx={{ ...styles[12] }}>
+            <Typography sx={{ ...styles[13] }}>{country.name}</Typography>
+            <Box sx={{ ...styles[14] }}>
+              <Box sx={{ ...styles[15] }}>
                 <p>
                   <strong>Native Name:</strong> {country.nativeName}
                 </p>
@@ -202,7 +103,6 @@ function Details({ countryData, isDarkMode }) {
         </Box>
       </Box>
     </Box>
-    // </Box>
   );
 }
 
