@@ -1,21 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Details from "./components/Details";
-import Home from "./components/Home";
+import Details from "./routes/Details";
+import Home from "./routes/Home";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CountriesContextProvider } from "./context/CountriesContext";
+import { CountriesContext } from "./context/CountriesContext";
 import CssBaseline from "@mui/material/CssBaseline";
-import styles from "./styles/styles";
 import lightTheme from "./styles/lightTheme";
 import darkTheme from "./styles/darkTheme";
 
-console.log("styles", styles);
-
 function App() {
-  const [countryData, setCountryData] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { countryData, setCountryData } = useContext(CountriesContext);
 
   useEffect(() => {
     fetch("https://restcountries.com/v2/all")
@@ -29,28 +26,26 @@ function App() {
 
   return (
     <>
-      <CountriesContextProvider>
-        <ThemeProvider theme={displayTheme}>
-          <CssBaseline />
-          <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-          <BrowserRouter>
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Home countryData={countryData} isDarkMode={isDarkMode} />
-                }
-              />
-              <Route
-                path="/details/:abbrev"
-                element={
-                  <Details countryData={countryData} isDarkMode={isDarkMode} />
-                }
-              />
-            </Routes>
-          </BrowserRouter>
-        </ThemeProvider>
-      </CountriesContextProvider>
+      <ThemeProvider theme={displayTheme}>
+        <CssBaseline />
+        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home countryData={countryData} isDarkMode={isDarkMode} />
+              }
+            />
+            <Route
+              path="/details/:abbrev"
+              element={
+                <Details countryData={countryData} isDarkMode={isDarkMode} />
+              }
+            />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 }

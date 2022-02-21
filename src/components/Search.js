@@ -3,7 +3,6 @@ import TextField from "@mui/material/TextField";
 import styles from "../styles/styles";
 
 export default function Search(props) {
-  console.log("serach props", props);
   function handleChange(e) {
     let boxText = e.target.value;
     props.setSearchField(boxText);
@@ -16,16 +15,7 @@ export default function Search(props) {
     props.mode === "light" ? "search-field-light" : "search-field-dark";
 
   return (
-    <Box
-      component="form"
-      sx={{ ...styles[21] }}
-      // sx={{
-      //   ...style.box,
-      //   marginY: "25px",
-      // }}
-      noValidate
-      autoComplete="off"
-    >
+    <Box component="form" sx={{ ...styles[21] }} noValidate autoComplete="off">
       <TextField
         fullWidth
         id={textFieldId}
