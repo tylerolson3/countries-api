@@ -45,7 +45,7 @@ export default function ControlledOpenSelect(props) {
         >
           <MenuItem value="">Filter By Region</MenuItem>
           <MenuItem value="Africa">Africa</MenuItem>
-          <MenuItem value="Americas">America</MenuItem>
+          <MenuItem value="Americas">Americas</MenuItem>
           <MenuItem value="Asia">Asia</MenuItem>
           <MenuItem value="Europe">Europe</MenuItem>
           <MenuItem value="Oceania">Oceania</MenuItem>
