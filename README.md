@@ -4,6 +4,7 @@ Write a short sentence or two about this project and what it does. Be sure to in
 **Link to project:**https://countries-tyler.netlify.app/
 
 ![alt tag](https://ibb.co/f1yfBJ5)
+![alt tag](http://placecorgi.com/1200/650)
 
 ## How It's Made:
 
