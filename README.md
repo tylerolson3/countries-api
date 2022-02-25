@@ -1,5 +1,4 @@
-# Countries REST API Project
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# About the Project
 
 This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display it like in the provided Figma design file.
 
