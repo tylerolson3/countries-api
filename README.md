@@ -22,7 +22,13 @@ The Challenge:
 
 Manipulating API 
 
+![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
+![Screen Shot 2022-02-25 at 3 22 20 PM](https://user-images.githubusercontent.com/67395239/155805091-cb8a776c-e521-4837-8c0f-7de0b3eedbe2.png)
+
+
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+
+
 
 
 
