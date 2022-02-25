@@ -18,7 +18,11 @@ The Challenge:
 
 ## How It's Made:
 
-**Tech used:** React, React Hooks (useState, useEffect, useContext), React Router, Material UI
+**Tech used:** 
+- React 
+- React Hooks (useState, useEffect, useContext) 
+- React Router 
+- Material UI
 
 Manipulating API 
 
@@ -40,8 +44,11 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
+## Pixel Perfect Deisgn
+- It's an important skill to have attention to detail so my project matched the layout provided by the designer.  It was easy to get thing looking close, but took awhile to perfect my layout.
+
 ### When you receive data from an API, it may not be organized in a way for you to use immediately
-- The country population data didn't include commas, so I implemented a function to add commas to the raw population data
+- The country population data didn't include commas, so I implemented a function to add commas when displaying the population data
 - Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
 
 ![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
