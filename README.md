@@ -1,22 +1,36 @@
 # Countries REST API Project
 Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
 
-The project was a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display it like in the provided Figma design file.
+This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display it like in the provided Figma design file.
 
 **Link to project:**https://countries-tyler.netlify.app/
+
+
+The Challenge:
+
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode
 
 ![countriesREADMEgif](https://user-images.githubusercontent.com/67395239/155774783-f8d12efc-a14d-4323-90cf-392d07abd0aa.gif)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** React, React Hooks (useState, useEffect, useContext), React Router, Material UI
+
+Manipulating API 
 
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
+
+
 ## Optimizations
 *(optional)*
+-Break components down into smaller readable components 
 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
 
 ## Lessons Learned:
 
@@ -58,7 +72,7 @@ Your users should be able to:
 - Filter countries by region
 - Click on a country to see more detailed information on a separate page
 - Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode _(optional)_
+- Toggle the color scheme between light and dark mode
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
