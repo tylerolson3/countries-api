@@ -33,10 +33,9 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 
 ## Optimizations
-- Break components down into smaller readable components
+- Break components down into smaller components that makes the code easier to read
 - Implemented the useContext hook for passing data between components instead of prop drilling
-- 
-
+- Added a loading spinner while waiting on the API call to receive initial data
 
 ## Lessons Learned:
 
