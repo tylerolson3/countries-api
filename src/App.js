@@ -19,7 +19,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setCountryData(data);
-        console.log(data);
+        console.log(data.slice(0, 30));
       });
   }, []);
 
