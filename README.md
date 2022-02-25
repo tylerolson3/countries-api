@@ -31,8 +31,9 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 
 ## Optimizations
-*(optional)*
--Break components down into smaller readable components 
+- Break components down into smaller readable components
+- Implemented the useContext hook for passing data between components instead of prop drilling
+- 
 
 
 ## Lessons Learned:
@@ -40,7 +41,8 @@ Here's where you can go to town on how you actually built this thing. Write as m
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
 ### When you receive data from an API, it may not be organized in a way for you to use immediately
-Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
+- The country population data didn't include commas, so I implemented a function to add commas to the raw population data
+- Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
 
 ![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
 ![Screen Shot 2022-02-25 at 3 22 20 PM](https://user-images.githubusercontent.com/67395239/155805091-cb8a776c-e521-4837-8c0f-7de0b3eedbe2.png)
