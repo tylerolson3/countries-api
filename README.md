@@ -28,7 +28,7 @@ Coding this application from scratch was a great learning experience, and was my
 ## Optimizations
 - Break components down into smaller components that makes the code easier to read
 - Implemented the useContext hook for passing data between components instead of prop drilling
-- Added a loading spinner while we wait to display initial API data
+- Added a loading spinner while we waiting on initial API data to display
 
 ## Lessons Learned:
 
