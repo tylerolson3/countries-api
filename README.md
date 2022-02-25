@@ -25,17 +25,10 @@ The Challenge:
 
 Coding this application from scratch was a great learning experience, and was my first introduction to Material UI.  Material UI was helpful in building the components for the search field, select menu, and toggling between light/dark mode.  There was a bit of a learning curve with Material UI, but I wanted to learn another CSS framework besides Bootstrap, and it was worth it since I've continued to use MUI on future projects.  
 
-
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
-
-
-
-
-
 ## Optimizations
 - Break components down into smaller components that makes the code easier to read
 - Implemented the useContext hook for passing data between components instead of prop drilling
-- Added a loading spinner while waiting on the API call to receive initial data
+- Added a loading spinner while we wait to display initial API data
 
 ## Lessons Learned:
 
