@@ -19,6 +19,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setCountryData(data);
+        console.log(data);
       });
   }, []);
 
@@ -38,7 +39,19 @@ function App() {
               }
             />
             <Route
+              path="/#"
+              element={
+                <Home countryData={countryData} isDarkMode={isDarkMode} />
+              }
+            />
+            <Route
               path="/details/:abbrev"
+              element={
+                <Details countryData={countryData} isDarkMode={isDarkMode} />
+              }
+            />
+            <Route
+              path="/#/details/:abbrev"
               element={
                 <Details countryData={countryData} isDarkMode={isDarkMode} />
               }
