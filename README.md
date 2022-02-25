@@ -1,9 +1,9 @@
 # My Awesome Project
 Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:**https://countries-tyler.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://ibb.co/f1yfBJ5)
 
 ## How It's Made:
 
