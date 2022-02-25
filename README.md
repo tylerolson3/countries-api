@@ -1,6 +1,6 @@
 # About the Project
 
-This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display as shown in the provided Figma design file.
+This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) to display the data as shown in the provided Figma design file.
 
 The Challenge:
 
