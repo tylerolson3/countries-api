@@ -22,8 +22,6 @@ The Challenge:
 
 Manipulating API 
 
-![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
-![Screen Shot 2022-02-25 at 3 22 20 PM](https://user-images.githubusercontent.com/67395239/155805091-cb8a776c-e521-4837-8c0f-7de0b3eedbe2.png)
 
 
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
@@ -40,6 +38,12 @@ Here's where you can go to town on how you actually built this thing. Write as m
 ## Lessons Learned:
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+
+**When you receive data from an API, it may not be organized in a way for you to use immediately**
+Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
+
+![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
+![Screen Shot 2022-02-25 at 3 22 20 PM](https://user-images.githubusercontent.com/67395239/155805091-cb8a776c-e521-4837-8c0f-7de0b3eedbe2.png)
 
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
