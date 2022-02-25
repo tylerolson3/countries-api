@@ -3,8 +3,7 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 **Link to project:**https://countries-tyler.netlify.app/
 
-![alt tag](https://ibb.co/f1yfBJ5)
-![alt tag](http://placecorgi.com/1200/650)
+![countriesREADMEgif](https://user-images.githubusercontent.com/67395239/155774783-f8d12efc-a14d-4323-90cf-392d07abd0aa.gif)
 
 ## How It's Made:
 
