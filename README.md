@@ -1,6 +1,6 @@
 # About the Project
 
-This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display it like in the provided Figma design file.
+This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) data and display as shown in the provided Figma design file.
 
 The Challenge:
 
@@ -23,7 +23,7 @@ The Challenge:
 - React Router 
 - Material UI
 
-Coding this application from scratch was a great learning experience, and was my first introduction to Material UI.  Material UI was helpful in building the components for the search field, select menu, and toggling between light/dark themes.  There was a bit of a learning curve with Material UI, but I wanted to learn another CSS framework besides Bootstrap, and it was worth it since I've continued to use MUI on future projects.  
+Coding this application from scratch was a great learning experience, and was my first introduction to Material UI.  Material UI was helpful in building the components for the search field, select menu, and toggling between light/dark mode.  There was a bit of a learning curve with Material UI, but I wanted to learn another CSS framework besides Bootstrap, and it was worth it since I've continued to use MUI on future projects.  
 
 
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
@@ -42,12 +42,12 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
-### Mobile-first Design Principles
+#### Mobile-first Design Principles
 
-### Pixel Perfect Deisgn
+#### Pixel Perfect Deisgn
 - It's an important skill to have attention to detail so my project matched the layout provided by the designer.  It was easy to get thing looking close, but took awhile to perfect my layout.
 
-### When you receive data from an API, it may not be organized in a way for you to use immediately
+#### When you receive data from an API, it may not be organized in a way for you to use immediately
 - The country population data didn't include commas, so I implemented a function to add commas when displaying the population data
 - Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
 
