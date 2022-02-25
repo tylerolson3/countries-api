@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Details from "./routes/Details";
 import Home from "./routes/Home";
 import { ThemeProvider } from "@mui/material/styles";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CountriesContext } from "./context/CountriesContext";
 import CssBaseline from "@mui/material/CssBaseline";
 import lightTheme from "./styles/lightTheme";
@@ -30,16 +30,10 @@ function App() {
       <ThemeProvider theme={displayTheme}>
         <CssBaseline />
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <HashRouter>
+        <BrowserRouter>
           <Routes>
             <Route
               path="/"
-              element={
-                <Home countryData={countryData} isDarkMode={isDarkMode} />
-              }
-            />
-            <Route
-              path="/#"
               element={
                 <Home countryData={countryData} isDarkMode={isDarkMode} />
               }
@@ -50,14 +44,8 @@ function App() {
                 <Details countryData={countryData} isDarkMode={isDarkMode} />
               }
             />
-            <Route
-              path="/#/details/:abbrev"
-              element={
-                <Details countryData={countryData} isDarkMode={isDarkMode} />
-              }
-            />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </ThemeProvider>
     </>
   );
