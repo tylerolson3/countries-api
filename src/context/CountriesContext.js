@@ -11,9 +11,9 @@ export const CountriesContextProvider = (props) => {
 
   function getBorderCountriesFullName(country) {
     if (country.borders) {
-      const borderCountriesArray = country.borders;
+      const arrayOfBorderCountryAbbreviations = country.borders;
       return countryData.filter((item) =>
-        borderCountriesArray.includes(item.alpha3Code)
+        arrayOfBorderCountryAbbreviations.includes(item.alpha3Code)
       );
     } else {
       return [];

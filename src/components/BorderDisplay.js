@@ -31,7 +31,7 @@ function BorderDisplay({ borderCountriesArray, isDarkMode }) {
       return displayBorderCountries;
     } else {
       // if the display country has no border countries, assign it's value to an empty string
-      displayBorderCountries = "";
+      displayBorderCountries = " None";
       return displayBorderCountries;
     }
   }

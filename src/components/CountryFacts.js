@@ -1,8 +1,10 @@
-import React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
+import { CountriesContext } from "../context/CountriesContext";
 import styles from "../styles/styles";
 
 const CountryFacts = ({ country }) => {
+  const { numberWithCommas } = useContext(CountriesContext);
   return (
     <Box sx={{ ...styles[14] }}>
       <Box sx={{ ...styles[15] }}>
@@ -10,7 +12,8 @@ const CountryFacts = ({ country }) => {
           <strong>Native Name:</strong> {country.nativeName}
         </p>
         <p>
-          <strong>Population:</strong> {country.population}
+          <strong>Population:</strong>
+          {numberWithCommas(country.population)}
         </p>
         <p>
           <strong>Region:</strong> {country.region}
