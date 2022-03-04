@@ -12,14 +12,15 @@ const CountryFacts = ({ country }) => {
           <strong>Native Name:</strong> {country.nativeName}
         </p>
         <p>
-          <strong>Population:</strong>
+          <strong>Population:</strong> <span> </span>
           {numberWithCommas(country.population)}
         </p>
         <p>
           <strong>Region:</strong> {country.region}
         </p>
         <p>
-          <strong>Sub Region:</strong> {country.subregion}
+          <strong>Sub Region:</strong> <span> </span>
+          {country.subregion}
         </p>
         <p>
           <strong>Capital:</strong> {country.capital}
@@ -27,7 +28,8 @@ const CountryFacts = ({ country }) => {
       </Box>
       <Box>
         <p>
-          <strong>Top Level Domain:</strong> {country.topLevelDomain}
+          <strong>Top Level Domain:</strong> <span> </span>
+          {country.topLevelDomain}
         </p>
         <p>
           <strong>Currencies:</strong> {country.currencies[0].name}

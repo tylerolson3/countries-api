@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import Details from "./routes/Details";
 import Home from "./routes/Home";
 import { ThemeProvider } from "@mui/material/styles";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { CountriesContext } from "./context/CountriesContext";
+import { AnimatePresence } from "framer-motion";
 import CssBaseline from "@mui/material/CssBaseline";
 import lightTheme from "./styles/lightTheme";
 import darkTheme from "./styles/darkTheme";
@@ -19,19 +20,22 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setCountryData(data);
-        console.log(data.slice(0, 30));
+        console.log(data.slice(0, 20));
       });
   }, []);
 
   let displayTheme = isDarkMode ? darkTheme : lightTheme;
+
+  const location = useLocation();
 
   return (
     <>
       <ThemeProvider theme={displayTheme}>
         <CssBaseline />
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <BrowserRouter>
-          <Routes>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.key}>
+            {/* <Routes> */}
             <Route
               path="/"
               element={
@@ -45,7 +49,7 @@ function App() {
               }
             />
           </Routes>
-        </BrowserRouter>
+        </AnimatePresence>
       </ThemeProvider>
     </>
   );

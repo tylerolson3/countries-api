@@ -7,6 +7,7 @@ import { CountriesContext } from "../context/CountriesContext";
 import styles from "../styles/styles";
 import CountryFacts from "../components/CountryFacts";
 import BackButton from "../components/BackButton";
+import AnimatePage from "../components/AnimatePage";
 
 function Details({ isDarkMode }) {
   const { abbrev } = useParams();
@@ -24,25 +25,27 @@ function Details({ isDarkMode }) {
   let country = selectedCountry[0];
 
   return (
-    <Box sx={{ ...styles[7] }}>
-      <BackButton isDarkMode={isDarkMode} />
-      <Box sx={{ ...styles[9] }}>
-        <Box sx={{ ...styles[10] }}>
-          <img src={country.flag} className="details--flag" width="100%" />
-        </Box>
+    <AnimatePage>
+      <Box sx={{ ...styles[7] }}>
+        <BackButton isDarkMode={isDarkMode} />
+        <Box sx={{ ...styles[9] }}>
+          <Box sx={{ ...styles[10] }}>
+            <img src={country.flag} className="details--flag" width="100%" />
+          </Box>
 
-        <Box sx={{ ...styles[11] }}>
-          <Box sx={{ ...styles[12] }}>
-            <Typography sx={{ ...styles[13] }}>{country.name}</Typography>
-            <CountryFacts country={country} />
-            <BorderDisplay
-              borderCountriesArray={getBorderCountriesFullName(country)}
-              isDarkMode={isDarkMode}
-            />
+          <Box sx={{ ...styles[11] }}>
+            <Box sx={{ ...styles[12] }}>
+              <Typography sx={{ ...styles[13] }}>{country.name}</Typography>
+              <CountryFacts country={country} />
+              <BorderDisplay
+                borderCountriesArray={getBorderCountriesFullName(country)}
+                isDarkMode={isDarkMode}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+    </AnimatePage>
   );
 }
 

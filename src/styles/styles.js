@@ -85,7 +85,7 @@ const styles = {
     marginBottom: { xs: "25px" },
   },
   16: {
-    width: { xs: "53vw", sm: "95%" },
+    width: { xs: "93vw", sm: "95%" },
     marginBottom: { xs: "1.5rem", sm: "0" },
     marginTop: { sm: "23px" },
     m: 1,
@@ -114,7 +114,7 @@ const styles = {
     transform: "scale(0.7)",
   },
   21: {
-    width: { xs: "93vw", sm: "480px" },
+    width: { xs: "91vw", sm: "480px" },
     minWidth: { sm: "200px" },
     marginLeft: { xs: "11px" },
     marginY: "25px",
@@ -124,6 +124,13 @@ const styles = {
   },
   23: {
     display: { xs: "block", sm: "inline-block" },
+  },
+  24: {
+    width: "100%",
+    height: "30vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 };
 
