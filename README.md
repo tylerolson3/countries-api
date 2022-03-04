@@ -13,7 +13,8 @@ The Challenge:
 
 **https://countries-tyler.netlify.app/**
 
-![countriesREADMEgif](https://user-images.githubusercontent.com/67395239/155774783-f8d12efc-a14d-4323-90cf-392d07abd0aa.gif)
+![ezgif-4-9934fc516b](https://user-images.githubusercontent.com/67395239/156834550-8a900d54-5451-4a32-9e26-2bcac4d75fd7.gif)
+<!-- ![countriesREADMEgif](https://user-images.githubusercontent.com/67395239/155774783-f8d12efc-a14d-4323-90cf-392d07abd0aa.gif) -->
 
 ## How It's Made:
 
