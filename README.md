@@ -36,12 +36,12 @@ Coding this application from scratch was a great learning experience, and was my
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
-#### Mobile-first Design Principles
+### Mobile-first Design Principles
 
-#### Pixel Perfect Deisgn
+### Pixel Perfect Deisgn
 - It's an important skill to have attention to detail so my project matched the layout provided by the designer.  It was easy to get thing looking close, but took awhile to perfect my layout.
 
-#### When you receive data from an API, it may not be organized in a way for you to use immediately
+### When you receive data from an API, it may not be organized in a way for you to use immediately
 - The country population data didn't include commas, so I implemented a function to add commas when displaying the population data
 - Part of the challenge was to display FULL NAMES of the border countries, however I was only receiving the abbreviations of the country names from the API.  I had to maninpulate the data using .filter() and .includes() to display the data in the desired format.  See screenshots below:
 
