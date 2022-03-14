@@ -58,22 +58,25 @@ const AllCountriesDisplay = ({ countryData, continent, searchField, mode }) => {
       );
     });
 
-  // when continent !== "" is true, it means the filter menu has a value, so display the filter by continent restults.
-  // Else, if the searchField has more than one character in it, display the countries whose name matches the search field.
-  // If neither the searchField or the continent filter is being used, display all countries
-  let displaySearchOrFilterCountries =
-    continent !== ""
-      ? filteredResults
-      : searchField.length > 1
-      ? searchResults
-      : countriesDisplay;
+  function countryCardsDisplay() {
+    // when 'filter by continent' has a value, display the countires matching the selected continent value
+    if (continent !== "") {
+      return filteredResults;
+    } else if (searchField.length > 1) {
+      // if the user is typing characters into the search field, display the search results
+      return searchResults;
+    } else {
+      // if neither search field or filter by continent is being used, then display all countries
+      return countriesDisplay;
+    }
+  }
 
   return (
     <>
       {countryData.length < 1 ? (
         <CircularProgress sx={{ color: "teal", margin: "0 auto" }} size={80} />
       ) : (
-        displaySearchOrFilterCountries
+        countryCardsDisplay()
       )}
     </>
   );
