@@ -1,10 +1,7 @@
 # About the Project
 
-This project was a solo challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) where the objective was to use the [REST Countries V2 API](https://restcountries.com/#api-endpoints-v2) to display the data as shown in the provided Figma design file.
-
 The Challenge:
-
-- See all countries from the API on the homepage
+- Display all country info from the API, and match your design to the provided Figma design file
 - Search for a country using an `input` field and display results in real-time
 - Filter countries by region
 - Click on a country to see more detailed information on a separate page
