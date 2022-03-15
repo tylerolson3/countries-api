@@ -44,12 +44,3 @@ No matter what your experience level, being an engineer means continuously learn
 
 ![Screen Shot 2022-02-25 at 3 21 13 PM](https://user-images.githubusercontent.com/67395239/155805086-4ed119a1-2d01-4ea4-8e18-8c054bccfd28.png)
 ![Screen Shot 2022-02-25 at 3 22 20 PM](https://user-images.githubusercontent.com/67395239/155805091-cb8a776c-e521-4837-8c0f-7de0b3eedbe2.png)
-
-## Examples:
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
