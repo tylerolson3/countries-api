@@ -31,10 +31,6 @@ Coding this application from scratch was a great learning experience, and was my
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
-
-### Mobile-first Design Principles
-
 ### Pixel Perfect Deisgn
 - It's an important skill to have attention to detail so my project matched the layout provided by the designer.  It was easy to get thing looking close, but took awhile to perfect my layout.
 
